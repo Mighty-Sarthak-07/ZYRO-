@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-gradient: radial-gradient(circle at center, #2A0808 0%, #0A0A0A 100%);
+}
+
+body {
+  background: var(--bg-gradient);
+  color: #ffffff;
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+* {
+  scrollbar-width: none;
+}
+
+::selection {
+  background: #B71C1C;
+  color: #FFB300;
+}
